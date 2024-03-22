@@ -1,4 +1,4 @@
-// Aluna: Douglas Benevides Almeida
+// Aluno: Douglas Benevides Almeida
 
 #include <stdio.h>
 #define amax 2047
