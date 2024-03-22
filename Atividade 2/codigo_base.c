@@ -1,4 +1,4 @@
-// Aluna: Douglas Benevides Almeida
+// Aluno: Douglas Benevides Almeida
 
 #include <stdio.h>
 #define amax 2047
@@ -39,8 +39,8 @@ void interpret() {
     code[0].l = 0;
     code[0].a = 0;
 
-    printf("\n  p    b    t  ");
-    printf("\n|---|----|----|");
+    printf("\n   p    b    t  ");
+    printf("\n|====|====|====|");
 
     do {
         printf("\n| %2d | %2d | %2d | ", p, b, t);
