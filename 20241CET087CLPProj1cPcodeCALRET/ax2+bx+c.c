@@ -1,8 +1,5 @@
-// p-code.cpp :  cpp.sh
-//
-// C conventions
-// 0 == FALSE
-//
+// Discente: Douglas Benevides Almeida
+
 #include <stdio.h>
 
 #define levmax 3
@@ -60,159 +57,55 @@ void pcodevhw() { // begin
   s[2] = 0;
   s[3] = 0;
 
-  code[0].f = INT;
-  code[0].l = 0;
-  code[0].a = 9;
-  code[1].f = LIT;
-  code[1].l = 0;
-  code[1].a = 1; // A = 1
-  code[2].f = STO;
-  code[2].l = 0;
-  code[2].a = 3;
-  code[3].f = LIT;
-  code[3].l = 0;
-  code[3].a = 2; // B = 2
-  code[4].f = STO;
-  code[4].l = 0;
-  code[4].a = 4;
-  code[5].f = LIT;
-  code[5].l = 0;
-  code[5].a = 3; // C = 3
-  code[6].f = STO;
-  code[6].l = 0;
-  code[6].a = 5;
-  code[7].f = LIT;
-  code[7].l = 0;
-  code[7].a = 4; // X = 4
-  code[8].f = STO;
-  code[8].l = 0;
-  code[8].a = 6;
-  code[9].f = LOD;
-  code[9].l = 0;
-  code[9].a = 6; // coloca no topo
-  code[10].f = STO;
-  code[10].l = 0;
-  code[10].a = 12;
-  code[11].f = LOD;
-  code[11].l = 0;
-  code[11].a = 6;
-  code[12].f = STO;
-  code[12].l = 0;
-  code[12].a = 13;
-  code[13].f = CAL;
-  code[13].l = 0;
-  code[13].a = 50;
-  code[14].f = LOD;
-  code[14].l = 0;
-  code[14].a = 7;
-  code[15].f = STO;
-  code[15].l = 0;
-  code[15].a = 12;
-  code[16].f = LOD;
-  code[16].l = 0;
-  code[16].a = 3;
-  code[17].f = STO;
-  code[17].l = 0;
-  code[17].a = 13;
-  code[18].f = CAL;
-  code[18].l = 0;
-  code[18].a = 50;
-
-  code[19].f = LOD;
-  code[19].l = 0;
-  code[19].a = 7;
-  code[20].f = STO;
-  code[20].l = 0;
-  code[20].a = 8;
-
-  code[21].f = LOD;
-  code[21].l = 0;
-  code[21].a = 4;
-  code[22].f = STO;
-  code[22].l = 0;
-  code[22].a = 12;
-  code[23].f = LOD;
-  code[23].l = 0;
-  code[23].a = 6;
-  code[24].f = STO;
-  code[24].l = 0;
-  code[24].a = 13;
-  code[25].f = CAL;
-  code[25].l = 0;
-  code[25].a = 50;
-
-  code[26].f = LOD;
-  code[26].l = 0;
-  code[26].a = 7;
-  code[27].f = STO;
-  code[27].l = 0;
-  code[27].a = 12;
-  code[28].f = LOD;
-  code[28].l = 0;
-  code[28].a = 8;
-  code[29].f = STO;
-  code[29].l = 0;
-  code[29].a = 13;
-  code[30].f = CAL;
-  code[30].l = 0;
-  code[30].a = 60;
-
-  code[31].f = LOD;
-  code[31].l = 0;
-  code[31].a = 7;
-  code[32].f = STO;
-  code[32].l = 0;
-  code[32].a = 12;
-  code[33].f = LOD;
-  code[33].l = 0;
-  code[33].a = 5;
-  code[34].f = STO;
-  code[34].l = 0;
-  code[34].a = 13;
-  code[35].f = CAL;
-  code[35].l = 0;
-  code[35].a = 60;
-  code[36].f = OPR;
-  code[36].l = 0;
-  code[36].a = 0;
-
-  code[50].f = INT;
-  code[50].l = 0;
-  code[50].a = 6;
-  code[51].f = LOD;
-  code[51].l = 0;
-  code[51].a = 3;
-  code[52].f = LOD;
-  code[52].l = 0;
-  code[52].a = 4;
-  code[53].f = OPR;
-  code[53].l = 0;
-  code[53].a = 4;
-  code[54].f = STO;
-  code[54].l = 1;
-  code[54].a = 7;
-  code[55].f = OPR;
-  code[55].l = 0;
-  code[55].a = 0;
-
-  code[60].f = INT;
-  code[60].l = 0;
-  code[60].a = 6;
-  code[61].f = LOD;
-  code[61].l = 0;
-  code[61].a = 3;
-  code[62].f = LOD;
-  code[62].l = 0;
-  code[62].a = 4;
-  code[63].f = OPR;
-  code[63].l = 0;
-  code[63].a = 2;
-  code[64].f = STO;
-  code[64].l = 1;
-  code[64].a = 7;
-  code[65].f = OPR;
-  code[65].l = 0;
-  code[65].a = 0;
+  code[0].f = INT; code[0].l = 0; code[0].a = 9; 
+  code[1].f = LIT; code[1].l = 0; code[1].a = 1; // A = 1 
+  code[2].f = STO; code[2].l = 0; code[2].a = 3; 
+  code[3].f = LIT; code[3].l = 0; code[3].a = 2; // B = 2 
+  code[4].f = STO; code[4].l = 0; code[4].a = 4; 
+  code[5].f = LIT; code[5].l = 0; code[5].a = 3; // C = 3 
+  code[6].f = STO; code[6].l = 0; code[6].a = 5; 
+  code[7].f = LIT; code[7].l = 0; code[7].a = 4; // X = 4 
+  code[8].f = STO; code[8].l = 0; code[8].a = 6; 
+  code[9].f = LOD; code[9].l = 0; code[9].a = 6; // coloca no topo 
+  code[10].f = STO; code[10].l = 0; code[10].a = 12; 
+  code[11].f = LOD; code[11].l = 0; code[11].a = 6; 
+  code[12].f = STO; code[12].l = 0; code[12].a = 13; 
+  code[13].f = CAL; code[13].l = 0; code[13].a = 50; 
+  code[14].f = LOD; code[14].l = 0; code[14].a = 7; 
+  code[15].f = STO; code[15].l = 0; code[15].a = 12; 
+  code[16].f = LOD; code[16].l = 0; code[16].a = 3; 
+  code[17].f = STO; code[17].l = 0; code[17].a = 13; 
+  code[18].f = CAL; code[18].l = 0; code[18].a = 50;
+  code[19].f = LOD; code[19].l = 0; code[19].a = 7; 
+  code[20].f = STO; code[20].l = 0; code[20].a = 8;
+  code[21].f = LOD; code[21].l = 0; code[21].a = 4; 
+  code[22].f = STO; code[22].l = 0; code[22].a = 12; 
+  code[23].f = LOD; code[23].l = 0; code[23].a = 6; 
+  code[24].f = STO; code[24].l = 0; code[24].a = 13; 
+  code[25].f = CAL; code[25].l = 0; code[25].a = 50;
+  code[26].f = LOD; code[26].l = 0; code[26].a = 7; 
+  code[27].f = STO; code[27].l = 0; code[27].a = 12; 
+  code[28].f = LOD; code[28].l = 0; code[28].a = 8; 
+  code[29].f = STO; code[29].l = 0; code[29].a = 13; 
+  code[30].f = CAL; code[30].l = 0; code[30].a = 60;
+  code[31].f = LOD; code[31].l = 0; code[31].a = 7; 
+  code[32].f = STO; code[32].l = 0; code[32].a = 12; 
+  code[33].f = LOD; code[33].l = 0; code[33].a = 5; 
+  code[34].f = STO; code[34].l = 0; code[34].a = 13; 
+  code[35].f = CAL; code[35].l = 0; code[35].a = 60; 
+  code[36].f = OPR; code[36].l = 0; code[36].a = 0;
+  code[50].f = INT; code[50].l = 0; code[50].a = 6; 
+  code[51].f = LOD; code[51].l = 0; code[51].a = 3; 
+  code[52].f = LOD; code[52].l = 0; code[52].a = 4; 
+  code[53].f = OPR; code[53].l = 0; code[53].a = 4; 
+  code[54].f = STO; code[54].l = 1; code[54].a = 7; 
+  code[55].f = OPR; code[55].l = 0; code[55].a = 0;
+  code[60].f = INT; code[60].l = 0; code[60].a = 6; 
+  code[61].f = LOD; code[61].l = 0; code[61].a = 3; 
+  code[62].f = LOD; code[62].l = 0; code[62].a = 4; 
+  code[63].f = OPR; code[63].l = 0; code[63].a = 2; 
+  code[64].f = STO; code[64].l = 1; code[64].a = 7; 
+  code[65].f = OPR; code[65].l = 0; code[65].a = 0;
 
   do {
     i = code[p];

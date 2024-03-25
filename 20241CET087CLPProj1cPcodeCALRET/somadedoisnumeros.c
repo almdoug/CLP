@@ -1,10 +1,6 @@
-// p-code.cpp :  cpp.sh
-//
-// C conventions
-// 0 == FALSE
-//
-#include <stdio.h>
+// Discente: Douglas Benevides Almeida
 
+#include <stdio.h>
 #define levmax 3
 #define amax 2047
 
@@ -60,73 +56,23 @@ void pcodevhw() { // begin
   s[2] = 0;
   s[3] = 0;
 
-  code[0].f = INT;
-  code[0].l = 0;
-  code[0].a = 6; // armazena ewspaço
-
-  code[1].f = LIT;
-  code[1].l = 0;
-  code[1].a = 4; // 4 no topo
-
-  code[2].f = STO;
-  code[2].l = 0;
-  code[2].a = 3; // armazena 4 no espaço 3 da pilha
-
-  code[3].f = LIT;
-  code[3].l = 0;
-  code[3].a = 3; // 3 no topo
-
-  code[4].f = STO;
-  code[4].l = 0;
-  code[4].a = 4; // armazena 3 no espaço 4 da pilha
-
-  code[5].f = LOD;
-  code[5].l = 0;
-  code[5].a = 3;
-
-  code[6].f = STO;
-  code[6].l = 0;
-  code[6].a = 9;
-
-  code[7].f = LOD;
-  code[7].l = 0;
-  code[7].a = 4;
-
-  code[8].f = STO;
-  code[8].l = 0;
-  code[8].a = 10;
-
-  code[9].f = CAL;
-  code[9].l = 0;
-  code[9].a = 11;
-
-  code[10].f = OPR;
-  code[10].l = 0;
-  code[10].a = 0;
-
-  code[11].f = INT;
-  code[11].l = 0;
-  code[11].a = 6;
-
-  code[12].f = LOD;
-  code[12].l = 0;
-  code[12].a = 3;
-
-  code[13].f = LOD;
-  code[13].l = 0;
-  code[13].a = 4;
-
-  code[14].f = OPR;
-  code[14].l = 0;
-  code[14].a = 2;
-
-  code[15].f = STO;
-  code[15].l = 1;
-  code[15].a = 5;
-
-  code[16].f = OPR;
-  code[16].l = 0;
-  code[16].a = 0;
+  code[0].f = INT; code[0].l = 0; code[0].a = 6; // armazena ewspaço
+  code[1].f = LIT; code[1].l = 0; code[1].a = 4; // 4 no topo
+  code[2].f = STO; code[2].l = 0; code[2].a = 3; // armazena 4 no espaço 3 da pilha
+  code[3].f = LIT; code[3].l = 0; code[3].a = 3; // 3 no topo
+  code[4].f = STO; code[4].l = 0; code[4].a = 4; // armazena 3 no espaço 4 da pilha
+  code[5].f = LOD; code[5].l = 0; code[5].a = 3;
+  code[6].f = STO; code[6].l = 0; code[6].a = 9;
+  code[7].f = LOD; code[7].l = 0; code[7].a = 4;
+  code[8].f = STO; code[8].l = 0; code[8].a = 10;
+  code[9].f = CAL; code[9].l = 0; code[9].a = 11;
+  code[10].f = OPR; code[10].l = 0; code[10].a = 0;
+  code[11].f = INT; code[11].l = 0; code[11].a = 6;
+  code[12].f = LOD; code[12].l = 0; code[12].a = 3;
+  code[13].f = LOD; code[13].l = 0; code[13].a = 4;
+  code[14].f = OPR; code[14].l = 0; code[14].a = 2;
+  code[15].f = STO; code[15].l = 1; code[15].a = 5;
+  code[16].f = OPR; code[16].l = 0; code[16].a = 0;
 
   do {
     i = code[p];
