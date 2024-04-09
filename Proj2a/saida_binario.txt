@@ -1,0 +1,10 @@
+-*/*    rejeitada
+b331    rejeitada
+1000    reconhecida
+-059    rejeitada
+1001    reconhecida
+6723    rejeitada
+palk    rejeitada
+98sf    rejeitada
+[{}]    rejeitada
+110011  reconhecida
