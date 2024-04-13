@@ -1,0 +1,4 @@
+aaacbbb -> [v] Pertence a gramatica
+aaaabbb -> [x] Nao pertence a gramatica
+aaabbbb -> [x] Nao pertence a gramatica
+aaazbbb -> [x] Nao pertence a gramatica
