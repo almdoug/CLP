@@ -1,0 +1,55 @@
+===================================
+
+Analisando: xyz
+
+<factor> -> id
+
+[x] Erro: Caracteres adicionais apos a expressao
+
+===================================
+
+Analisando: 1357
+
+<factor> -> int_constant
+
+[v] Sucesso: aceito.
+
+===================================
+
+Analisando: 1+(3*5)
+
+<factor> -> int_constant
+<expr> -> <term>
+<factor> -> ( <expr> )
+<factor> -> int_constant
+<term> -> <factor>
+<factor> -> int_constant
+
+[v] Sucesso: aceito.
+
+===================================
+
+Analisando: (5*7)+(9/11)
+
+<factor> -> ( <expr> )
+<factor> -> int_constant
+<term> -> <factor>
+<factor> -> int_constant
+<expr> -> <term>
+<factor> -> ( <expr> )
+<factor> -> int_constant
+<term> -> <factor>
+<factor> -> int_constant
+
+[v] Sucesso: aceito.
+
+===================================
+
+Analisando: (8642)
+
+<factor> -> ( <expr> )
+<factor> -> int_constant
+
+[v] Sucesso: aceito.
+
+===================================
